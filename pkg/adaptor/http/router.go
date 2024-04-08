@@ -9,9 +9,6 @@ import (
 const (
 	apiVersion      = "/v1"
 	healthCheckRoot = "/health_check"
-	// student
-	studentsAPIRoot = apiVersion + "/students"
-	studentIDParam  = "student_id"
 )
 
 func InitRouter() *echo.Echo {
