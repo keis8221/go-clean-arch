@@ -31,7 +31,7 @@ migrate: ## run migrations
 	@migrate -database 'postgresql://$(DB_USER):$(DB_PASSWORD)@localhost:$(DB_PORT)/$(DB_DATABASE)?sslmode=disable' -path migration/ up 1
 
 .PHONY: generate-model
-generate-model:
+generate-model: ## generate model
 	@$(GO_BIN)/sqlboiler psql
 
 psql: ## login postgresql
